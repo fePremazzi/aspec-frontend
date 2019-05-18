@@ -7,9 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private userUrl = 'http://localhost:8080/api/test/user';
-  private pmUrl = 'http://localhost:8080/api/test/pm';
-  private adminUrl = 'http://localhost:8080/api/test/admin';
+  // private userUrl = 'http://oauth-aspec.me-prd.com/api/test/user';
+  private userUrl = '/v2/entities/urn:ngsi-ld:iot:006';
+  private pmUrl = 'http://oauth-aspec.me-prd.com/api/test/pm';
+  private adminUrl = 'http://oauth-aspec.me-prd.com/api/test/admin';
 
   constructor(private http: HttpClient) { }
 
