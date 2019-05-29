@@ -1,0 +1,17 @@
+/* Table Style */
+.table-style {width: 80%;text-align: center;margin: 0 auto 40px;}
+.table-style th,.table-style td {text-align: center;padding: 15px 10px;font-weight: 100;font-size: 14px;border-bottom: 1px solid #eee;}
+.table-style th {font-weight: 600;}
+.table-style tr {height: fit-content;background-color: #fff;}
+.table-style thead tr {background-color: #CADDFD !important;}
+
+/* Default */
+html,body {height: 100%;margin: 0;padding: 0;font-family: 'Roboto', sans-serif;background-color: #282923;}
+.Card {text-align: center;width: 380px;margin: 50px auto;}
+.Card > h2 {color: #ffffff;margin-bottom: 40px;margin-top: 0;font-size: 30px;}
+.Card > .Setup {text-align: left;}
+.Card > .Setup > .Title {font-size: 16px;color: #ffffff;margin-bottom: 15px;}
+.Card > .Setup > i {margin-bottom: 10px;display: block;color: #e0e0e0;}
+.Card > .Setup > .item {color: #cacaca;margin-bottom: 8px;}
+.Card > .Setup > .item > .code {color: #A1DA2B;width: 145px;display: inline-block;}
+.Card > .Setup > .item > .code > .num {color: #E7DB74;}
