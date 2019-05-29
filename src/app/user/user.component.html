@@ -1,3 +1,23 @@
-<h4>Content from Server</h4>
-{{board}}
+<h4>Conteúdo do Helix</h4>
 {{errorMessage}}
+
+<table id="refresh" ng-app="" class="table-style" cellpadding="0" cellspacing="0" table-complete data-tr-count="10" data-td-count="3">
+    <thead>
+        <tr>
+            <th>Dispositivo IoT</th>
+            <th>Umidade do ar</th>
+            <th>Umidade do solo</th>
+            <th>Luminosidade</th>
+            <th>Temperatura (°C)</th>
+        </tr>
+    </thead>
+	<tbody>
+        <tr>
+            <td>{{board.id}}</td>
+            <td>{{board.humidity_air.value}}</td>
+            <td>{{board.humidity_soil.value}}</td>
+            <td>{{board.luminosity.value}}</td>
+            <td>{{board.temperature.value}}</td>
+        </tr>        
+	</tbody>
+</table>

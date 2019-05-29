@@ -15,8 +15,8 @@ const httpOptions = {
 })
 export class AuthService {
 
-  private loginUrl = 'http://localhost:8000/api/auth/signin';
-  private signupUrl = 'http://localhost:8000/api/auth/signup';
+  private loginUrl = 'http://oauth-aspec.me-prd.com/api/auth/signin';
+  private signupUrl = 'http://oauth-aspec.me-prd.com/api/auth/signup';
 
   constructor(private http: HttpClient) {
   }

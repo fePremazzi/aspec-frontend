@@ -1,0 +1,8 @@
+{
+    "/v2/*": {
+      "target": "http://18.220.112.200:1026",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }

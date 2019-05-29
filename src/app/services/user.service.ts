@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -7,14 +7,17 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private userUrl = 'http://localhost:8080/api/test/user';
-  private pmUrl = 'http://localhost:8080/api/test/pm';
-  private adminUrl = 'http://localhost:8080/api/test/admin';
+  // private userUrl = 'http://oauth-aspec.me-prd.com/api/test/user';
+  private userUrl = '/v2/entities/urn:ngsi-ld:iot:006';
+  private pmUrl = 'http://oauth-aspec.me-prd.com/api/test/pm';
+  private adminUrl = 'http://oauth-aspec.me-prd.com/api/test/admin';
+
+  private head = new HttpHeaders() .append('accept', 'application/json') .append('content-type', 'application/json') .append('param1', 'valor1') .append('param2', 'valor2');
 
   constructor(private http: HttpClient) { }
 
-  getUserBoard(): Observable<string> {
-    return this.http.get(this.userUrl, { responseType: 'text' });
+  getUserBoard(): Observable<Object> {
+    return this.http.get(this.userUrl, { responseType: 'json' });
   }
 
   getPMBoard(): Observable<string> {
